@@ -1,6 +1,6 @@
 | Win32 name | What to type in BotCreator (case sentitive) |
 |:---------|:---------------|
-| VK_PLAY || Play
+| VK_PLAY | Play |
 |  VK_VOLUME_MUTE | VolMute |
 | VK_VOLUME_DOWN | VolUp |
 | VK_VOLUME_UP | VolDown |
