@@ -1,4 +1,4 @@
-# BotCreator 1.0.6
+# BotCreator 1.0.7
 Create a bot that can click, move the mouse and press keys
 
 ###How to Prepare
@@ -16,6 +16,7 @@ Install [Intel PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Buil
 | save [file] | Save all current commands to a BotCreator script |
 | reset   | Resets all commands to the bot |
 | run [n] | Runs all commands. (n = times to repeat (-1 is infinite, invalid arguments are treated as 1))
+| list commands | Shows all current commands |
 
 ####Supported keys
 | Keys  | Supported?   | How to Add |
@@ -28,8 +29,7 @@ Install [Intel PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Buil
 | Media Keys | Partially | [See LUT](docs/media-keys.md) |
 
 ####Changelog
-* "add typing" changed to "add string". Now it doesn't function as a separate method, instead it's an iterated "add key", allowing to add repeats and delays
-* Saving and loading a script should now work
+* Mostly bugfixes
 
 ####TODO List
 > More keys support
