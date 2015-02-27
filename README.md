@@ -30,7 +30,6 @@ Install [Intel PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Buil
 ####Changelog
 * "add typing" changed to "add string". Now it doesn't function as a separate method, instead it's an iterated "add key", allowing to add repeats and delays
 * Saving and loading a script should now work
-* 
 
 ####TODO List
 > More keys support
