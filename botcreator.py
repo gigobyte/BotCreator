@@ -12,12 +12,17 @@ if __name__ == '__main__':
 			if answer == 'y':
 				bot = Bot()
 				print ">> Bot reset"
+				
+		elif 'load' in input:
+			try:	var = input.split()[1]
+			except IndexError: print "Invalid file"
+			else: bot.load_commands(input.split()[1])
 
 		elif input == 'add click':
 			pos = bot.get_click()
 			bot.add_command('click', pos)
 			print ">> Click added"
-
+			
 		elif input == 'add typing':
 			text = raw_input(">> Text: ")
 			bot.add_command('type', text)
@@ -26,12 +31,15 @@ if __name__ == '__main__':
 			try: times = int(input.split()[1])
 			except (ValueError, IndexError): times = 1
 			
+			#if 'from' in input:
+			
 			bot.print_commands()
 			if times > 0:
 				answer = raw_input(">> Are you sure? (y/n) ")
 				if answer == 'y':
 					for i in range(0,times):
 						bot.run()
+
 			elif times == -1:
 				answer = raw_input(">> This will endlessly run the bot. Are you sure? (y/n)")
 				if answer == 'y':
@@ -45,5 +53,9 @@ if __name__ == '__main__':
 			interval = raw_input(">> Interval (in secs): ")
 			bot.add_command('press', [key,times,interval])
 
-		else:
+		elif 'save' in input:
+			try: bot.save_commands(input.split()[1])
+			except: print "Invalid filename"
+			
+		elif input:
 			print ">>", input, "not recognised"
