@@ -1,17 +1,16 @@
-# BotCreator 1.0.5
+# BotCreator 1.0.6
 Create a bot that can click, move the mouse and press keys
 
-###How to Run
-`pip install pyHook`  and 
-`pip install PyUserInput`
+###How to Prepare
+Install [pyHook](http://sourceforge.net/projects/pyhook/)
 
-`python botcreator.py`
+Install [Intel PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win32-py2.7.exe/download) or [AMD PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win-amd64-py2.7.exe/download)
 
 ###How to Use
 | Command  | What is does   |
 |:---------|:---------------|
 | add click | Waits for a click to happen anywhere on the screen. The click location will be added to the list of commands that the bot will execute.
-| add typing     | Asks for a string that will be typed by the bot. |
+| add string    | Asks for a string that will be typed by the bot. |
 | add key      | Asks for a key that will be pressed by the bot, how many times to repeat and the delay between the keystrokes. For supported keys see below |
 | load [file] | Loads a BotCreator script |
 | save [file] | Save all current commands to a BotCreator script |
@@ -27,6 +26,11 @@ Create a bot that can click, move the mouse and press keys
 | Virtual-Keys | Partially | [See LUT](docs/virtual-keys.md) |
 | Function Keys | Yes (to F12), No (F13 and up) | No special rule |
 | Media Keys | Partially | [See LUT](docs/media-keys.md) |
+
+####Changelog
+* "add typing" changed to "add string". Now it doesn't function as a separate method, instead it's an iterated "add key", allowing to add repeats and delays
+* Saving and loading a script should now work
+* 
 
 ####TODO List
 > More keys support
