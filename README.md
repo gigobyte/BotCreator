@@ -23,5 +23,5 @@ Create a bot that can click, move the mouse and press keys
 | 0-9 | Yes | No special rule |
 | Numpad Keys | No | |
 | Virtual-Keys | Partially | [See LUT](docs/virtual-keys.md) |
-| Function Keys | Yes (to F12), No (F13 and up) | [See LUT](docs/function-keys.md) |
+| Function Keys | Yes (to F12), No (F13 and up) | No special rule |
 | Media Keys | Yes | [See LUT](docs/media-keys.md) |
