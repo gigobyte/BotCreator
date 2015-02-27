@@ -1,4 +1,4 @@
-# BotCreator
+# BotCreator 1.0.0
 Create a bot that can click, move the mouse and press keys
 
 ###How to Run
