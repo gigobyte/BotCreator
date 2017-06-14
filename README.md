@@ -1,12 +1,12 @@
 # BotCreator 1.0.7
 Create a bot that can click, move the mouse and press keys
 
-###How to Prepare
+### How to Prepare
 Install [pyHook](http://sourceforge.net/projects/pyhook/)
 
 Install [Intel PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win32-py2.7.exe/download) or [AMD PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win-amd64-py2.7.exe/download)
 
-###How to Use
+### How to Use
 | Command  | What is does   |
 |:---------|:---------------|
 | add click | Waits for a click to happen anywhere on the screen. The click location will be added to the list of commands that the bot will execute.
@@ -18,7 +18,7 @@ Install [Intel PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Buil
 | run [n] | Runs all commands. (n = times to repeat (-1 is infinite, invalid arguments are treated as 1))
 | list commands | Shows all current commands |
 
-####Supported keys
+#### Supported keys
 | Keys  | Supported?   | How to Add |
 |:---------|:---------------|:------|
 | a-Z | Yes | No special rule |
@@ -28,10 +28,10 @@ Install [Intel PyWin](http://sourceforge.net/projects/pywin32/files/pywin32/Buil
 | Function Keys | Yes (to F12), No (F13 and up) | No special rule |
 | Media Keys | Partially | [See LUT](docs/media-keys.md) |
 
-####Changelog
+#### Changelog
 * Mostly bugfixes
 
-####TODO List
+#### TODO List
 > More keys support
 
 > More script customizations
